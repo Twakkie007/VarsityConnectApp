@@ -35,7 +35,7 @@ export const filterCompanies = (companies: Company[], searchTerm: string) => {
   });
 };
 
-export const getInterestedCompanies = (companies: any[], interestedCompanyIds: Set<string>) => {
+export const getInterestedCompanies = (companies: Company[], interestedCompanyIds: Set<string>) => {
   return companies.filter(company => 
     company && interestedCompanyIds.has(company.id)
   );
