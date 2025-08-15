@@ -15,7 +15,7 @@ export const calculateProfileCompletion = (studentProfile: StudentProfile | null
   );
 };
 
-export const filterCompanies = (companies: any[], searchTerm: string) => {
+export const filterCompanies = (companies: Company[], searchTerm: string) => {
   return companies.filter(company => {
     if (!company) return false;
     
